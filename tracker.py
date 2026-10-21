@@ -2,10 +2,9 @@ tasks = []
 
 
 def add_task(title):
-    """Add a task with the status open. An empty title is rejected."""
+    """Add a task with the status open. A blank title raises ValueError."""
     if not title.strip():
-        print("Error: a task needs a title.")
-        return None
+        raise ValueError("A task needs a title.")
     task = {"title": title, "status": "open"}
     tasks.append(task)
     return task
