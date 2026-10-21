@@ -6,6 +6,6 @@ def add_task(title):
     if not title.strip():
         print("Error: a task needs a title.")
         return None
-    task = {"title": title, "status": "open"}
+    task = {"title": title.strip(), "status": "open"}
     tasks.append(task)
     return task
