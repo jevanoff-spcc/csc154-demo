@@ -1,2 +1,2 @@
 # csc154-demo
-Test space for csc 154 development
+Test space for CSC 154 development
